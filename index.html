@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio | Barezilla</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- googlefont (poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- googlefont(martian mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap" rel="stylesheet" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiperJs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- aosJs -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#">barezilla.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav text-center">
+            <a class="nav-link me-4" aria-current="page" href="#">Home</a>
+            <a class="nav-link me-4" href="#about">About Me</a>
+            <a class="nav-link me-4" href="#portfolio">Portfolio</a>
+            <a class="nav-link me-4" href="#testimonial">Testimonial</a>
+            <a class="nav-link me-4" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-6 profile mb-3">
+            <h1 class="mt-5 mb-3">
+              Hi! <br />
+              I am <span class="type"></span>
+            </h1>
+            <p class="text-muted mb-5">Web Developer with high level of experience in web designing and development, producting the Quality work.</p>
+            <a href="#" class="btn-click">Hire Me!</a>
+            <div class="socmed mt-5">
+              <i class="fa-brands fa-linkedin me-3 fa-2x linkedin"></i>
+              <i class="fa-brands fa-github me-3 fa-2x github"></i>
+              <i class="fa-brands fa-twitter me-3 fa-2x twitter"></i>
+            </div>
+          </div>
+          <div class="col-md-5 img-profile mb-3">
+            <img src="img/bg-img.svg" alt="bg-img" class="img-fluid mx-auto d-block" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF HERO -->
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row about-me mb-4">
+          <div class="col">
+            <h2 class="text-center">About Me.</h2>
+          </div>
+        </div>
+        <div class="row justify-content-between me-1 ms-1">
+          <div class="col-md-5 p-3 mb-3 profile" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+            <h3 class="text-center">Profile</h3>
+            <div class="row mb-3">
+              <div class="col-md-4 p-3">
+                <img src="img/profile.svg" alt="profile" class="d-block mx-auto img-fluid rounded-circle" />
+              </div>
+              <div class="col">
+                <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur ad dicta a!</p>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <a href="#" class="btn-click">Download my CV</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 p-3 mb-3 skills" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+            <h3 class="text-center">Skills</h3>
+            <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <div class="icon">
+              <div class="icon-skills">
+                <div class="icon-skills text-center p-2 mb-2">
+                  <i class="fa-brands fa-html5 fa-2x me-3 html"></i>
+                  <i class="fa-brands fa-css3-alt fa-2x me-3 css"></i>
+                  <i class="fa-brands fa-square-js fa-2x me-3 js"></i>
+                  <i class="fa-brands fa-php fa-2x me-3 php"></i>
+                </div>
+                <div class="framework-skills text-center p-2">
+                  <i class="fa-brands fa-bootstrap fa-2x me-3 bootstrap"></i>
+                  <i class="fa-brands fa-sass fa-2x me-3 sass"></i>
+                  <i class="fa-brands fa-laravel fa-2x me-3 laravel"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF ABOUT -->
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row port-title">
+          <div class="col">
+            <h2 class="text-center">Portfolio.</h2>
+          </div>
+        </div>
+        <div class="row port p-2">
+          <div class="col-md-4 p-2" data-aos="zoom-in-up" data-aos-duration="900">
+            <div class="card port-card">
+              <img src="img/port/port-1.png" class="card-img-top" alt="port-1" />
+              <div class="card-body text-center">
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis ipsum quaerat</p>
+                <a href="#" class="port-link text-muted">Go to Website &rarr;</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-2" data-aos="zoom-in-up" data-aos-duration="950">
+            <div class="card port-card">
+              <img src="img/port/port-1.png" class="card-img-top" alt="port-1" />
+              <div class="card-body text-center">
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis ipsum quaerat</p>
+                <a href="#" class="port-link text-muted">Go to Website &rarr;</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 p-2" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="card port-card">
+              <img src="img/port/port-1.png" class="card-img-top" alt="port-1" />
+              <div class="card-body text-center">
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis ipsum quaerat</p>
+                <a href="#" class="port-link text-muted">Go to Website &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF PORTFOLIO -->
+
+    <!-- TESTIMONIAL -->
+    <section id="testimonial" class="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center testi-text">Testimonial.</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center p-3">
+          <div class="col p-3">
+            <!-- Slider main container -->
+            <div class="swiper p-3">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide p-2">
+                  <div class="card-testi text-center p-3">
+                    <img src="img/test/test_1.svg" alt="testi1" class="d-block mx-auto mb-3" />
+                    <h5 class="mb-4">Max Allegri</h5>
+                    <p class="text-center text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide p-2">
+                  <div class="card-testi text-center p-3">
+                    <img src="img/test/test_2.svg" alt="testi1" class="d-block mx-auto mb-3" />
+                    <h5 class="mb-4">Del Piero</h5>
+                    <p class="text-center text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide p-2">
+                  <div class="card-testi text-center p-3">
+                    <img src="img/test/test_3.svg" alt="testi1" class="d-block mx-auto mb-3" />
+                    <h5 class="mb-4">Federico Chiesa</h5>
+                    <p class="text-center text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev p-4 ms-3 swiper-btn"></div>
+              <div class="swiper-button-next p-4 me-3 swiper-btn"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF TESTIMONIAL -->
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container p-3">
+        <div class="row">
+          <div class="col contact-title">
+            <h2 class="text-center">Contact Me.</h2>
+            <p class="text-muted text-center">Get in touch with me!</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form action="" method="" class="form-contact">
+              <div class="mb-3">
+                <input type="text" class="form-control name" id="name" autocomplete="off" placeholder="e.g. Lionel Messi" />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control email" id="email" autocomplete="off" placeholder="e.g. messiGoat@gmail.com" />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control text-area message" id="message" rows="3" placeholder="Leave your message here.."></textarea>
+              </div>
+              <button type="submit" class="btn-contact">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF CONTACT -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#00aa13" fill-opacity="1" d="M0,192L120,208C240,224,480,256,720,229.3C960,203,1200,117,1320,74.7L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+    </svg>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+      <p class="text-center">Built with Love by Ananda Barezilla</p>
+    </footer>
+    <!-- END OF FOOTER -->
+    <!-- Navigator -->
+    <div class="navigator">
+      <a href="#">
+        <i class="fa-solid fa-angles-up scrollUp"></i>
+      </a>
+    </div>
+
+    <!-- end navigator -->
+
+    <!-- typedJS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- swiperJs -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- aosjs -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

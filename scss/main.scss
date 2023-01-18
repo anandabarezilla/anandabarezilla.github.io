@@ -1,0 +1,322 @@
+$primary-color: #00aa13;
+$border: 1px solid;
+
+// border-button
+@mixin btn-style {
+  text-decoration: none;
+  color: #fff;
+  background: $primary-color;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+// boxshadow-skills
+@mixin icon-shadow {
+  box-shadow: 0 2px 4px $primary-color;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+// navbar
+.navbar {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+
+  .navbar-brand {
+    font-family: "Martian Mono", monospace;
+    color: $primary-color;
+  }
+
+  .nav-link:hover {
+    color: $primary-color;
+  }
+}
+
+section {
+  margin-top: 6rem;
+  margin-bottom: 9rem;
+  padding-top: 5rem;
+  h2 {
+    // border: $border;
+    font-weight: 800;
+    font-size: 2.2rem;
+  }
+}
+
+// HERO
+.hero {
+  //   border: $border;
+  padding: 2rem;
+  .profile {
+    // border: $border;
+    margin-top: -1rem;
+    h1 {
+      font-size: 2.6rem;
+      span {
+        color: $primary-color;
+      }
+    }
+
+    .btn-click {
+      @include btn-style();
+      // transition: 0.3s;
+      &:hover {
+        filter: brightness(0.85);
+      }
+    }
+
+    .socmed {
+      //   color: gray;
+      color: #424040;
+      transition: 0.3s;
+      //   border: $border;
+      .linkedin:hover {
+        color: #0a66c2;
+      }
+      .github:hover {
+        color: #171515;
+      }
+      .twitter:hover {
+        color: #1da1f2;
+      }
+    }
+  }
+  .img-profile {
+    // border: $border;
+    img {
+      width: 65%;
+    }
+  }
+}
+
+// about
+
+.about {
+  .about-me {
+    color: $primary-color;
+  }
+  .profile {
+    border: 2px solid $primary-color;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: relative;
+    .btn-click {
+      @include btn-style();
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 83%;
+      &:hover {
+        filter: brightness(0.85);
+      }
+    }
+  }
+  .skills {
+    border: 2px solid $primary-color;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: 0.3s;
+    .icon-skills {
+      .html {
+        @include icon-shadow();
+        transition: 0.3s;
+        &:hover {
+          color: #e44d26;
+        }
+      }
+      .css {
+        @include icon-shadow();
+        transition: 0.3s;
+        &:hover {
+          color: #264de4;
+        }
+      }
+      .js {
+        @include icon-shadow();
+        transition: 0.3s;
+        &:hover {
+          color: #f0db4f;
+        }
+      }
+      .php {
+        @include icon-shadow();
+        transition: 0.3s;
+        &:hover {
+          color: #8993be;
+        }
+      }
+    }
+    .framework-skills {
+      .bootstrap {
+        @include icon-shadow();
+        transition: 0.3s;
+        &:hover {
+          color: #0275d8;
+        }
+      }
+      .sass {
+        @include icon-shadow();
+        transition: 0.3s;
+        &:hover {
+          color: #cc6699;
+        }
+      }
+      .laravel {
+        @include icon-shadow();
+        transition: 0.3s;
+        &:hover {
+          color: #fb503b;
+        }
+      }
+    }
+  }
+}
+
+// portfolio
+
+.portfolio {
+  .port-title {
+    h2 {
+      color: $primary-color;
+    }
+  }
+  .port {
+    .port-card {
+      border-radius: 20px;
+      transition: 0.3s;
+      &:hover {
+        box-shadow: 0 4px 8px $primary-color;
+      }
+      img {
+        border-radius: 20px 20px 0 0;
+      }
+      .port-link {
+        text-decoration: none;
+        color: inherit;
+        padding-bottom: 5px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          border-bottom: 2px solid $primary-color;
+          width: 70%;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+
+// testimonial
+.testimonial {
+  .testi-text {
+    color: $primary-color;
+  }
+  .swiper {
+    // width: 600px;
+    width: 45vw;
+    height: 300px;
+    box-shadow: inset 0 4px 8px $primary-color;
+    border-radius: 5px;
+    .card-testi {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      img {
+        width: 100px;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      background: $primary-color;
+    }
+
+    .swiper-btn {
+      color: $primary-color;
+    }
+  }
+}
+
+// contact
+.contact {
+  margin-bottom: 0;
+  .contact-title {
+    h2 {
+      color: $primary-color;
+    }
+  }
+
+  .form-contact {
+    .message {
+      resize: none;
+    }
+    .form-control {
+      box-shadow: 0 4px 8px $primary-color;
+    }
+  }
+
+  .btn-contact {
+    @include btn-style();
+    border: none;
+  }
+}
+
+.navigator {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: $primary-color;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.3s;
+  pointer-events: none;
+  .scrollUp {
+    color: white;
+  }
+  &.active {
+    opacity: 1;
+    pointer-events: initial;
+  }
+}
+
+// footer
+.footer {
+  background: $primary-color;
+  padding: 10px;
+  color: white;
+}
+
+//   responsive
+@media (max-width: 768px) {
+  .hero {
+    .row {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .profile {
+      text-align: center;
+      .socmed {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .about {
+    .profile {
+      text-align: center;
+    }
+  }
+
+  .testimonial {
+    // background: #00aa13;
+    .swiper {
+      width: 80vw;
+      height: 315px;
+    }
+  }
+}
